@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .ocupado{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id='btn'>ligar</button>
+    <div class = 'sala'> TESTE</div>
+<script>
+   let botao = document.querySelector('#btn');
+let sala = document.querySelector('.sala');
+
+botao.addEventListener('click', function(){
+sala.classList.toggle('ocupado');
+});
+</script>
+</body>
+</html>

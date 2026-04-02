@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Adivinhe o Número</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <canvas id="confetti"></canvas>
+
+  <!-- Imagem acima do card -->
+  <img id="imagemResultado" src="">
+
+  <div class="container">
+    <h1>🎯 Adivinhe</h1>
+    <p>Escolha um número entre <b>1 a 10</b></p>
+
+    <input type="number" id="palpite" placeholder="Seu palpite">
+    <br>
+    <button class="btn-tentar" onclick="verificarPalpite()">Tentar</button>
+    <button class="btn-reset" onclick="reiniciarJogo()">Reiniciar</button>
+
+    <div id="mensagem"></div>
+    <div id="tentativas"></div>
+  </div>
+
+  <script src="js/numero.js"></script>
+
+</body>
+
+</html>
